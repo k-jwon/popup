@@ -4,161 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
     <style>
-        body {
-            background: #ccc;
+        #wrap {
+            border: 1px solid black;
+            width: 250px;
+            height: 500px;
+            margin: 0px auto;
+            background-color: black;
         }
-        .popup {
-            background: rgb(24, 77, 62);
-            width: 300px;
-            height: 250px;
-            border: 1px solid #ccc;
+        ul {
+            display: none;                
+                   
+        }
+        li {
             padding: 10px;
         }
-        .popup h1 {
-            font-size: 30px;
-            margin: 5px 15px;
-            color: rgb(249, 255, 214);
+        p {            
+            padding: 0 10px;
+            
         }
-        .popup ul>li {
-            font-size: 15px;
-            line-height: 25px;
+        p:hover {            
+            background-color: white;
+            padding: 10px;
+            
+        }      
+        a {
+            text-decoration: none;
+            font-weight: bold;
             color: white;
+             
         }
-        .popup button {
-            position: absolute;
-            bottom: 20px;
-            right: 30px;
-            background: none;
-            border: 1px solid #ccc;
-            border-radius: 15px;
-            width: 55px;
-            height: 25px;
-            font-size: 0.8em;
-            color: rgb(249, 255, 214);
+        a:hover {
+            color: black;
+        }
+        li:hover {
             cursor: pointer;
+            background-color: white;            
+            
         }
-        #notice {
-            position: absolute;
-            left: 150px;
-            top: 100px;
-            z-index: 1000;
-        }
-        img {
-            width: 300px;
-        }
-        #img {
-            position: absolute;
-            left: 550px;
-            top: 100px;
-        }
-        .popup2 button {
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            background: none;
-            border: none;
-            font-size: 0.8em;
-            color: rgb(249, 255, 214);
-            cursor: pointer;
-        }
+        
     </style>
-    <title>레이어 팝업창</title>
+    <title>아코디언 메뉴</title>
 </head>
 <body>
-    <p>문서를 열면 레이어팝업창이 그대로 보인다.</p>
-    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Valetudinis pararetur referta summumque impetus iucundum putat. Illustribus impetu venandi, miraretur fortunam ius. Liquidae doctrinis mi mutat seditione incidant viam. Credere docui afferrent ratione locatus, lorem, seditiones arbitratu assidua plerumque. Concessum disputando attico salutatus fringilla vexetur constituit ne dictum culpa admonitionem. Tenebimus derepta insidiarum tuo iucundum aptior summumque caelo. Inopem fugienda eas perfecto consumere iusto afferre satis angusti. Aegritudo deterritum multitudinem moderatio momenti conficiuntque amplificarique. 
-
-        Utuntur disserendi quae initiis fermentum pulcherrimum impendet propter. Eget potitur fonte saperet meo circumcisaque sequitur muniti testibus. Ipsa praestabiliorem dare, graviter investigandi. Mi similique plusque, solitudo significet dicunt, cyrenaicisque. Insatiabiles orestem fortunam legendos, corrumpit, confirmare quaestionem tortor. 
-        
-        Phaedrum viverra odia, victi claudicare locatus disputandum materia liberalitati sapientium omittam. Significet clarorum amatoriis consuetudinum bestiae t perpessio duo inhaererent. Superstitio propter conturbamur manilium gaudere menandri. Afficitur constituam vestrae morbis ne. Volumus animis successionem fruuntur molestiam tuentur solida. Pueri naturae praestabiliorem aliquando stultus qua obligantur. 
-        
-        Facultas necessarius obiecta, adest studio sentio quaestionem. Eo praesertim homini sapienter deorsum percipi quippiam viverra inquam praeclaram. Pecunias rem eo suscipit at. Ultimum turbent animus plerisque ista impediri aliquid acutum depulsa. Illi asperum, nomini primo, audire dissentiet summam pervenias antiquitate. Iudicium maximis impendere dum meminerimus arbitror maiestatis. Elegantis numquam moderatio ullam auctor oporteat id eisque. Incidunt faciendi vitiis urna instructus vituperatoribus pulchraeque. Patriam miser laboribus, crudeli putanda quantus admirer senectutem dicemus. 
-        
-        Nominant adiungimus malint possim fecerit mala offendimur, cognomen doctissimos, securi animadversionis. Scripserit vivendum vivendo diis vivendi. Physici torquatum pulvinar inbecilloque transferre dividendo epularum permanentes. Nimis sapientia delectamur consentinis potenti democritea, eu. Percussit addidisti detracto geometriaque moderatio paranda illius aspernandum defenditur. 
-        
-        Conversa que feramus horreat, ferentur arbitratu officiis iudicant. Liberos animus auctori huius patiatur nullo laetitia gaudeat arbitramur perspexit. Pacuvii contemnit philosophari factis falso partis versatur litteris, polyaeno eaque agam. Apte gaudere superstitione, indignius nisl sublata logikh apeirian arbitramur dictas. Cognita aptissimum derepta expectata ipse nivem. Volutpat sua industria faciendumve facillime posteri suscepi fabulis. Istius chaere, solitudo manus legerint facere depravatum civitas magnis, sentiant, occultarum. Incurreret mollis penitus requietis ancillae. Concedo testibus confidam physicis suscipiet aegritudines. 
-        
-        Opera ipsos multavit quieti, firme impetum. Bonarum elit deorsus, praetorem, idcirco defenditur etsi ero accommodare. Vide invenerit stoicis iusteque arte emolumenti. Varias intervalla firmissima conspectum late. Declinationem expetitur graece idem iudicio otiosum novi imperii, studium. Ista amicitia vel filium adiuvet eae. Publicam depravata defenditur cn pertinaces eu videbitur isdem inprobitas certamen. 
-        
-        Laudandis iucunditas libris clarorum diu. Seque veserim usu terentii inopem finxerat claudicare. Honeste et verborum inanium fidem praeclara malesuada negarent. Concedo lacinia pacem soliditatem, fecit invitat. Tantopere gubernatoris praesidia fungimur oporteat fallare referta mortis, levamur mandamus, sensuum. Intellegentium quietus veri terroribus stabilique cui peccandi, rutilius legatis. Dixeris sit impediente, maluisti doctiores. Consequat coerceri dominos huic postea verissimum loqui velit geometriaque. Stoicis interesset magni pellat ultimum, asperiores. 
-        
-        Afficitur confidere afferat, ruinae expetendam refert brevi reperiri liberiusque iste habemus. Explicatam aristotele disserui iure cognomen intellegamus cursus. Videantur praestabiliorem puerilis commodi expectata maerores, erit. Consilio plerique familias continens gaudeat, chrysippi constituamus disserendi dolorem laudantium ardore. Risus justo, aliquet, graviterque ingenia consuetudine, idque alliciat. Disputari imperdiet homini videretur, derepta litterae patre, pararetur cupiditatum. 
-        
-        Facete admirer insolens amicitiam incidunt. Sola fabulis amplificarique iusto putet utrum iustitia sic. Graeci interesset collegi facete aliquem tollatur, coercendi, declarant huic. Homine magnopere, epicuri eveniunt generis ipsos atilii fugiendis voluptatibus adest diam. Quaerat fruitur nisl fruentem cohaerescent vidit. Ceterorum praeterierunt ordinem detrimenti libidinem permanentes peccandi agam aegritudo iniuria lectus. 
-        
-        Docet sinat medicorum perinde falli variari. Iisque negent chorusque aliquam cupiditates consuetudine. Operam probaretur conclusum tantas delectatio. Declinabunt potuimus conspiratione illae, nihilo ac habeat possum vellem ad. Falso stabilitas detracta quidem infimum praesentium theophrastus expressas, difficiles timiditatem. Exorsus familiari corporisque alias frustra sempiternum imperitos inter. Vim mea legendos reque veniat illius. Veniat interesse improborum inprobis maxime, cedentem reliqui videor disseretur, perpetua. Percussit servata apeirian triari negat sensu persius nostra temeritas eveniet permanentes. 
-        
-        Interdum artis adhibuit inprobitatem grate crudeli nominis videbitur depulsa scilicet, infinito. Adipisci iucunda nostro, rationis, doloremque torqueantur porrecta inventore contentus disputando pater. Pueriliter utilitate velint libido poena delectet habeatur aequitatem accedunt suscipit tribus. Quale indocti istius aptior facere. Videre liberamur, ii torquatos meque. 
-        
-        Indoctis accusantibus valetudinis collegisti plerique multo expeteremus hostem iudicatum exquisitis moveat. Vexetur uberius quantumcumque attulit sequatur concordia. Fortunae etiam, doctiores leniter salutandi magistra. Pugnare primum gubernatoris splendido conveniunt desiderant. Quanto alienus legere videantur prorsus cum miserum via d gratia. Recte aliquod pariatur apte remotis fonte chrysippe careret inventore. Instituendarum incurrunt facile apeirian concursio atomi discordans. Putant everti quadam conversam utamur male reliquisti. Ac chrysippi triarius fructu disserendi latina iaculis existimo, nomini. 
-        
-        Dissentiunt constituam, domo inciderit mea. Nostra commodius pertineant caret consequentis leniat turpis, vacillare ullus consecutus tritani. Optimi consectetur propterea voluit retinent videmus concessum atqui auctor. Stabilem veniat imperiis discedere minime. Solam laudantium quamque cursu fugiendam greges habitasse impeditur habet maximis corrupte. Asperner nescio porrecta maluisti monstret aristotelem appellant nominant senserit. Arbitror referuntur dubitat deterritum attingere philosophi. 
-        
-        Desiderat animadversionem solent lorem pacuvii odio retinere sic texit ultima ordinem. Solida fama t numeranda cognitionis parvam faciendumve sequatur. Consequat percipit perpaulum singulis subtilius permulta indocti curis animum, humili. Afferat comparaverit quietus crudeli reliqui eorumque recordatione. Diuturnitatem intereant, gaudeat ne morte. Delectatum adiungimus veniat interesse ii quoddam monstret. Tristique verbis urbes attento vester dediti futura nihilo, modice dicitur timorem. Huius servata militaris errorem tantopere, amoris, stare minus adversarium si.
-    
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Valetudinis pararetur referta summumque impetus iucundum putat. Illustribus impetu venandi, miraretur fortunam ius. Liquidae doctrinis mi mutat seditione incidant viam. Credere docui afferrent ratione locatus, lorem, seditiones arbitratu assidua plerumque. Concessum disputando attico salutatus fringilla vexetur constituit ne dictum culpa admonitionem. Tenebimus derepta insidiarum tuo iucundum aptior summumque caelo. Inopem fugienda eas perfecto consumere iusto afferre satis angusti. Aegritudo deterritum multitudinem moderatio momenti conficiuntque amplificarique. 
-
-        Utuntur disserendi quae initiis fermentum pulcherrimum impendet propter. Eget potitur fonte saperet meo circumcisaque sequitur muniti testibus. Ipsa praestabiliorem dare, graviter investigandi. Mi similique plusque, solitudo significet dicunt, cyrenaicisque. Insatiabiles orestem fortunam legendos, corrumpit, confirmare quaestionem tortor. 
-        
-        Phaedrum viverra odia, victi claudicare locatus disputandum materia liberalitati sapientium omittam. Significet clarorum amatoriis consuetudinum bestiae t perpessio duo inhaererent. Superstitio propter conturbamur manilium gaudere menandri. Afficitur constituam vestrae morbis ne. Volumus animis successionem fruuntur molestiam tuentur solida. Pueri naturae praestabiliorem aliquando stultus qua obligantur. 
-        
-        Facultas necessarius obiecta, adest studio sentio quaestionem. Eo praesertim homini sapienter deorsum percipi quippiam viverra inquam praeclaram. Pecunias rem eo suscipit at. Ultimum turbent animus plerisque ista impediri aliquid acutum depulsa. Illi asperum, nomini primo, audire dissentiet summam pervenias antiquitate. Iudicium maximis impendere dum meminerimus arbitror maiestatis. Elegantis numquam moderatio ullam auctor oporteat id eisque. Incidunt faciendi vitiis urna instructus vituperatoribus pulchraeque. Patriam miser laboribus, crudeli putanda quantus admirer senectutem dicemus. 
-        
-        Nominant adiungimus malint possim fecerit mala offendimur, cognomen doctissimos, securi animadversionis. Scripserit vivendum vivendo diis vivendi. Physici torquatum pulvinar inbecilloque transferre dividendo epularum permanentes. Nimis sapientia delectamur consentinis potenti democritea, eu. Percussit addidisti detracto geometriaque moderatio paranda illius aspernandum defenditur. 
-        
-        Conversa que feramus horreat, ferentur arbitratu officiis iudicant. Liberos animus auctori huius patiatur nullo laetitia gaudeat arbitramur perspexit. Pacuvii contemnit philosophari factis falso partis versatur litteris, polyaeno eaque agam. Apte gaudere superstitione, indignius nisl sublata logikh apeirian arbitramur dictas. Cognita aptissimum derepta expectata ipse nivem. Volutpat sua industria faciendumve facillime posteri suscepi fabulis. Istius chaere, solitudo manus legerint facere depravatum civitas magnis, sentiant, occultarum. Incurreret mollis penitus requietis ancillae. Concedo testibus confidam physicis suscipiet aegritudines. 
-        
-        Opera ipsos multavit quieti, firme impetum. Bonarum elit deorsus, praetorem, idcirco defenditur etsi ero accommodare. Vide invenerit stoicis iusteque arte emolumenti. Varias intervalla firmissima conspectum late. Declinationem expetitur graece idem iudicio otiosum novi imperii, studium. Ista amicitia vel filium adiuvet eae. Publicam depravata defenditur cn pertinaces eu videbitur isdem inprobitas certamen. 
-        
-        Laudandis iucunditas libris clarorum diu. Seque veserim usu terentii inopem finxerat claudicare. Honeste et verborum inanium fidem praeclara malesuada negarent. Concedo lacinia pacem soliditatem, fecit invitat. Tantopere gubernatoris praesidia fungimur oporteat fallare referta mortis, levamur mandamus, sensuum. Intellegentium quietus veri terroribus stabilique cui peccandi, rutilius legatis. Dixeris sit impediente, maluisti doctiores. Consequat coerceri dominos huic postea verissimum loqui velit geometriaque. Stoicis interesset magni pellat ultimum, asperiores. 
-        
-        Afficitur confidere afferat, ruinae expetendam refert brevi reperiri liberiusque iste habemus. Explicatam aristotele disserui iure cognomen intellegamus cursus. Videantur praestabiliorem puerilis commodi expectata maerores, erit. Consilio plerique familias continens gaudeat, chrysippi constituamus disserendi dolorem laudantium ardore. Risus justo, aliquet, graviterque ingenia consuetudine, idque alliciat. Disputari imperdiet homini videretur, derepta litterae patre, pararetur cupiditatum. 
-        
-        Facete admirer insolens amicitiam incidunt. Sola fabulis amplificarique iusto putet utrum iustitia sic. Graeci interesset collegi facete aliquem tollatur, coercendi, declarant huic. Homine magnopere, epicuri eveniunt generis ipsos atilii fugiendis voluptatibus adest diam. Quaerat fruitur nisl fruentem cohaerescent vidit. Ceterorum praeterierunt ordinem detrimenti libidinem permanentes peccandi agam aegritudo iniuria lectus. 
-        
-        Docet sinat medicorum perinde falli variari. Iisque negent chorusque aliquam cupiditates consuetudine. Operam probaretur conclusum tantas delectatio. Declinabunt potuimus conspiratione illae, nihilo ac habeat possum vellem ad. Falso stabilitas detracta quidem infimum praesentium theophrastus expressas, difficiles timiditatem. Exorsus familiari corporisque alias frustra sempiternum imperitos inter. Vim mea legendos reque veniat illius. Veniat interesse improborum inprobis maxime, cedentem reliqui videor disseretur, perpetua. Percussit servata apeirian triari negat sensu persius nostra temeritas eveniet permanentes. 
-        
-        Interdum artis adhibuit inprobitatem grate crudeli nominis videbitur depulsa scilicet, infinito. Adipisci iucunda nostro, rationis, doloremque torqueantur porrecta inventore contentus disputando pater. Pueriliter utilitate velint libido poena delectet habeatur aequitatem accedunt suscipit tribus. Quale indocti istius aptior facere. Videre liberamur, ii torquatos meque. 
-        
-        Indoctis accusantibus valetudinis collegisti plerique multo expeteremus hostem iudicatum exquisitis moveat. Vexetur uberius quantumcumque attulit sequatur concordia. Fortunae etiam, doctiores leniter salutandi magistra. Pugnare primum gubernatoris splendido conveniunt desiderant. Quanto alienus legere videantur prorsus cum miserum via d gratia. Recte aliquod pariatur apte remotis fonte chrysippe careret inventore. Instituendarum incurrunt facile apeirian concursio atomi discordans. Putant everti quadam conversam utamur male reliquisti. Ac chrysippi triarius fructu disserendi latina iaculis existimo, nomini. 
-        
-        Dissentiunt constituam, domo inciderit mea. Nostra commodius pertineant caret consequentis leniat turpis, vacillare ullus consecutus tritani. Optimi consectetur propterea voluit retinent videmus concessum atqui auctor. Stabilem veniat imperiis discedere minime. Solam laudantium quamque cursu fugiendam greges habitasse impeditur habet maximis corrupte. Asperner nescio porrecta maluisti monstret aristotelem appellant nominant senserit. Arbitror referuntur dubitat deterritum attingere philosophi. 
-        
-        Desiderat animadversionem solent lorem pacuvii odio retinere sic texit ultima ordinem. Solida fama t numeranda cognitionis parvam faciendumve sequatur. Consequat percipit perpaulum singulis subtilius permulta indocti curis animum, humili. Afferat comparaverit quietus crudeli reliqui eorumque recordatione. Diuturnitatem intereant, gaudeat ne morte. Delectatum adiungimus veniat interesse ii quoddam monstret. Tristique verbis urbes attento vester dediti futura nihilo, modice dicitur timorem. Huius servata militaris errorem tantopere, amoris, stare minus adversarium si.</pre>
-
-    <!-- 레이어 팝업창(가장 위 혹은 가장 아래 작성) -->
-    
-    <div id="notice" class="popup">
-        <h1>Happy Christmas!</h1>
+    <div id="wrap">
+    <p class="btn"><a href="#">Exhibition</a>
         <ul>
-            <li>크리스마스 이벤트 : 인스타그램을 <br>팔로우하면 추첨을 통해
-                상품권을 <br>드립니다!
-            </li>
-            <li>일시 : 12.10일 토요일 - 12.25일 <br>일요일 15일간</li>
-            <li>추첨일 : 12월 27일 화요일</li>
-            
+            <li><a href="#">Current</a></li>
+            <li><a href="#">Past</a></li>
+            <li><a href="#">Want to go</a></li>
         </ul>
-        <button>닫기</button>
-    </div>
-    <div id="img" class="popup2">
-        <img src="img/크리스마스_팝업_01.jpg" alt="크리스마스팝업">
-        <button>닫기</button>
-    </div>
+    </p>
+    <hr>
+    <p class="btn"><a href="#">Archives</a>
+        <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Exhibitions</a></li>
+            <li><a href="#">Programs</a></li>
+        </ul>
+    </p>
+    <hr>
+    <p class="btn"><a href="#">Artist</a>
+        <ul>
+            <li><a href="#">Korean</a></li>
+            <li><a href="#">Asian</a></li>
+            <li><a href="#">Western</a></li>
+        </ul>
+    </p>
+    <hr>
+</div>
 
     <script>
-        let closeBtn = document.querySelector('.popup > button');
-        let closeBtn2 = document.querySelector('.popup2 > button');
+        $(function(){
+            $('.btn a').on('mouseover',function(){
+                $('.btn').next('ul').filter(':visible').slideUp();
 
-        closeBtn.addEventListener('click', function(){
-            document.querySelector('.popup').style.display='none'            
-            document.querySelector('body').style.background='#fff'
+                $(this).parent().next().slideDown();
+                // 기본 이벤트를 차단하여 이동을 막는다.
+                return false;
+            });
         });
-
-        closeBtn2.addEventListener('click', function(){
-            document.querySelector('.popup2').style.display='none'   
-            document.querySelector('body').style.background='#fff'         
-        })
     </script>
 </body>
 </html>
